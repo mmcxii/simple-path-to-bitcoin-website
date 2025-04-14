@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --spacing: 4px;
+
+  --color-orange: orange;
+  --color-white: white;
+}

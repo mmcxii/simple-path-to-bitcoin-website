@@ -1,0 +1,28 @@
+{
+  "globalSetup": "./jest.setup-global.ts",
+  "passWithNoTests": true,
+  "projects": [
+    {
+      "displayName": "server-api",
+      "preset": "ts-jest",
+      "testEnvironment": "node",
+      "testMatch": ["<rootDir>/src/server/api/**/*.test.ts"]
+    },
+    {
+      "displayName": "shared",
+      "preset": "ts-jest",
+      "testEnvironment": "node",
+      "testMatch": ["<rootDir>/src/shared/**/*.test.ts"]
+    },
+    {
+      "displayName": "browser",
+      "moduleNameMapper": {
+        "\\.(css)$": "<rootDir>/mocks/style.mock.js"
+      },
+      "preset": "ts-jest",
+      "setupFilesAfterEnv": ["<rootDir>/jest.setup-browser.ts"],
+      "testEnvironment": "jsdom",
+      "testMatch": ["<rootDir>/src/browser/**/*.test.{ts,tsx}"]
+    }
+  ]
+}
