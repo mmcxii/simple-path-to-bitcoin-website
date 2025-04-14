@@ -18,7 +18,9 @@ export const App: React.FC<AppProps> = (props) => {
     <div className="flex h-full flex-col">
       <SiteHeader />
 
-      <Router />
+      <div className="mx-auto w-full max-w-7xl px-4">
+        <Router />
+      </div>
 
       <SiteFooter />
     </div>

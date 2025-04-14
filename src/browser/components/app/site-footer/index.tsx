@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Container } from "../../templates/container";
 import { Navigation } from "./navigation";
 
 export const SiteFooter: React.FC = () => {
@@ -6,10 +7,10 @@ export const SiteFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto flex flex-col gap-1 p-2 md:flex-row md:items-baseline md:justify-between">
+    <Container className="mt-auto flex items-baseline justify-between gap-1 p-2">
       <p className="text-center">{currentYear}</p>
 
       <Navigation />
-    </footer>
+    </Container>
   );
 };
