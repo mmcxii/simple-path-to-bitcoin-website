@@ -1,5 +1,6 @@
 export enum UiRoutes {
   Home = "/",
+  Glossary = "/glossary",
 }
 
 export enum ExternalRoutes {

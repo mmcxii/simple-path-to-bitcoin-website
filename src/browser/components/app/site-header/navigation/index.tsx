@@ -9,7 +9,10 @@ export const Navigation: React.FC = () => {
   const [translate] = useTranslation([SITE_NAVIGATION]);
 
   //* Variables
-  const navItems: Array<[route: UiRoutes, label: string]> = [[UiRoutes.Home, "home"]];
+  const navItems: Array<[route: UiRoutes, label: string]> = [
+    [UiRoutes.Home, "home"],
+    [UiRoutes.Glossary, "glossary"],
+  ];
 
   return (
     <nav className="flex-[1_1_0px]">

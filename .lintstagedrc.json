@@ -1,6 +1,6 @@
 {
   "**/*.css": ["npm run lint-staged:prettier", "npm run lint-staged:stylelint"],
-  "**/*.{graphql,json,md,yml}": ["npm run lint-staged:prettier"],
+  "**/*.{graphql,json,md,yml}": ["npm run lint-staged:sortier", "npm run lint-staged:prettier"],
   "**/*.{ts,tsx}": [
     "npm run lint-staged:sortier",
     "npm run lint-staged:prettier",

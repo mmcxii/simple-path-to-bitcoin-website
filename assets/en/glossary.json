@@ -1,0 +1,12 @@
+{
+  "coldWallet": "A hardware-based wallet on a device not connected to the internet. Transactions from Cold Wallets are signed on the device and then broadcast to the Bitcoin network via an internet connected device such as a smartphone or computer.",
+  "custodian/custodial": "Custodians are third parties who manage bitcoin wallets on behalf of their users. These Custodial wallets are easy to user, but come at the cost of requiring users to trust their custodian.",
+  "exchange": "A marketplace used to purchase bitcoin with local currencies.",
+  "hotWallet": "A software-based wallet on a device connected to the Internet.",
+  "lightning": "A network for sending bitcoin quickly, with the ability to setle On Chain if needed.",
+  "onChain": "Transactions on the Bitcoin Blockchain, as opposed to transactions on a Layer Two network, such as Lightning.",
+  "sat": "A sat is the smallest individual unit of bitcoin. One bitcoin contains 1,000,000,000 sats. Short for Satoshi, named for the inventor of Bitcoin.",
+  "seedPhrase": "A set of twelve or twenty-four words used to create a wallet.",
+  "utxo": "An acronym for Unspent Transaction Output. A UTXO can be thought of as a chunk of bitcoin within a wallet.",
+  "wallet": "A key (or keys) used to access bitcoin."
+}

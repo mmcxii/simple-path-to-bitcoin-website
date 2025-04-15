@@ -3,7 +3,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 import * as React from "react";
 import { initReactI18next } from "react-i18next";
-import { ERRORS, SITE_NAVIGATION } from "../../../shared/i18n";
+import { ERRORS, GLOSSARY, SITE_NAVIGATION } from "../../../shared/i18n";
 
 export function useI18n() {
   //* State
@@ -20,7 +20,7 @@ export function useI18n() {
           backend: {
             loadPath: "/api/translations/{{lng}}/{{ns}}.json",
           },
-          ns: [ERRORS, SITE_NAVIGATION],
+          ns: [ERRORS, SITE_NAVIGATION, GLOSSARY],
           react: {
             bindI18n: "languageChanged",
             useSuspense: false,
